@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 4rem;
+    color: #444;
+}
+p{
+    font-size: 2rem;
+    color: #888;
+}
+
+.heading-sec{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+}
+.heading-sec .sec-img{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 190px;
+}
+
+.heading-sec .sec-img h2{
+    flex-basis: 120px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: start;
+}
+.heading-sec .sec-img h2 span{
+    font-size: 2rem;
+    margin-top: 6px;
+    color: #888;
+}
+.underline{
+    width: 100%;
+    height: 2px;
+    background-color: #888;
+}
+.today{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+.main-section{
+    margin-top: 20px;
+    padding: 20px;
+}
+.today:first-child{
+    border-bottom: 2px solid #888;
+}
+.today + .today{
+    border-bottom: 2px solid #888;
+}
+@media screen and (min-width: 750px) {
+
+    .main-section{
+        max-width: 850px;
+        box-shadow: 1px 1px 5px #000;
+    }
+    .all-day{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .today{
+        flex-direction: column;
+    }
+    .today + .today,
+    .today:first-child
+    {
+        border:none;
+    }
+    .day{
+        flex-basis:0px !important;
+    }
+}
+.day{
+    font-size: 2rem;
+    flex-basis: 150px;
+}
+.temps .temp1 p{
+    color: #444 !important;
+}
+@media screen and (min-width: 650px){
+    .temps{
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 150px;
+    }
+}
+@media screen and (min-width: 750px){
+    .temps{
+        flex-basis: 0px !important;
+    }
+}
+.city-temparature{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (min-width:600px) {
+    .city-temparature{
+        flex-direction: row;
+    }
+    .city-temparature .temparature{
+        margin-left: 4px;
+    }
+}
